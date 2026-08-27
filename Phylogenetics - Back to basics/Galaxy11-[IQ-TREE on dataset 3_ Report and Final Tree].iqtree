@@ -1,0 +1,425 @@
+IQ-TREE 2.1.2 COVID-edition built Mar 30 2021
+
+Input file name: /corral4/main/objects/6/0/d/dataset_60d3fde0-172e-44b8-98a4-50e9b81c0ff2.dat
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 968224
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 55 sequences with 1481 nucleotide sites
+Number of constant sites: 445 (= 30.0473% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 445 (= 30.0473% of all sites)
+Number of parsimony informative sites: 861
+Number of distinct site patterns: 1104
+
+ModelFinder
+-----------
+
+Best-fit model according to AIC: GTR+F+R6
+
+List of models sorted by AIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+GTR+F+R6         -35592.979   71435.959 +    0.801   71459.206 +    0.819   72098.518 +   0.0699
+GTR+F+R7         -35592.681   71439.363 +    0.146   71463.392 +    0.101   72112.523 - 6.36e-05
+GTR+F+R5         -35597.695   71441.390 +    0.053   71463.869 +   0.0796   72093.349 +    0.927
+TIM2+F+R6        -35606.092   71458.183 -  1.2e-05   71480.662 -  1.8e-05   72110.142 - 0.000209
+TIM2+F+R7        -35605.819   71461.637 - 2.13e-06   71484.885 - 2.18e-06   72124.196 - 1.86e-07
+TIM2+F+R5        -35610.719   71463.438 - 8.64e-07   71485.163 - 1.89e-06   72104.795 -  0.00303
+GTR+F+R4         -35636.225   71514.451 - 7.23e-18   71536.175 - 1.58e-17   72155.808 - 2.54e-14
+GTR+F+I+G4       -35659.124   71552.248 - 4.48e-26   71572.506 - 2.04e-25   72172.403 - 6.32e-18
+TVM+F+R6         -35657.661   71563.323 - 1.77e-28   71586.184 - 2.19e-28   72220.582 - 2.18e-28
+TVM+F+R5         -35660.825   71565.650 - 5.52e-29   71587.750 -    1e-28   72212.307 - 1.37e-26
+TVM+F+R7         -35657.665   71567.330 - 2.38e-29   71590.967 -    2e-29   72235.190 - 1.47e-31
+TIM3+F+R6        -35666.733   71579.466 - 5.51e-32   71601.945 - 8.28e-32   72231.424 - 9.64e-31
+TIM3+F+R7        -35666.456   71582.913 - 9.84e-33   71606.160 - 1.01e-32   72245.472 - 8.59e-34
+TPM2u+F+R6       -35670.591   71585.182 - 3.16e-33   71607.282 - 5.74e-33   72231.840 - 7.83e-31
+TPM2+F+R6        -35670.591   71585.182 - 3.16e-33   71607.282 - 5.74e-33   72231.840 - 7.83e-31
+TIM3+F+R5        -35673.174   71588.348 -  6.5e-34   71610.073 - 1.42e-33   72229.706 - 2.28e-30
+TPM2+F+R5        -35674.482   71588.964 - 4.77e-34   71610.317 - 1.26e-33   72225.021 - 2.37e-29
+TPM2u+F+R5       -35674.482   71588.964 - 4.77e-34   71610.317 - 1.26e-33   72225.021 - 2.37e-29
+TPM2u+F+R7       -35670.564   71589.127 -  4.4e-34   71611.988 - 5.46e-34   72246.386 - 5.44e-34
+TPM2+F+R7        -35670.564   71589.128 -  4.4e-34   71611.989 - 5.46e-34   72246.386 - 5.44e-34
+TN+F+R6          -35675.711   71595.421 - 1.89e-35   71617.522 - 3.43e-35   72242.079 - 4.68e-33
+TIM+F+R6         -35675.282   71596.564 - 1.07e-35   71619.043 -  1.6e-35   72248.522 - 1.87e-34
+TN+F+R7          -35675.329   71598.658 - 3.75e-36   71621.519 - 4.65e-36   72255.916 - 4.63e-36
+TIM+F+R7         -35674.921   71599.842 - 2.07e-36   71623.089 - 2.12e-36   72262.401 - 1.81e-37
+TN+F+R5          -35682.090   71604.181 - 2.37e-37   71625.534 - 6.25e-37   72240.237 - 1.18e-32
+TIM+F+R5         -35681.618   71605.237 -  1.4e-37   71626.962 - 3.06e-37   72246.594 -  4.9e-34
+TPM3u+F+R6       -35722.573   71689.147 -  8.4e-56   71711.247 - 1.53e-55   72335.805 - 2.08e-53
+TPM3+F+R6        -35722.573   71689.147 -  8.4e-56   71711.247 - 1.53e-55   72335.805 - 2.08e-53
+TPM3u+F+R7       -35722.389   71692.777 - 1.37e-56   71715.639 -  1.7e-56   72350.036 - 1.69e-56
+TPM3+F+R7        -35722.389   71692.778 - 1.37e-56   71715.639 -  1.7e-56   72350.036 - 1.69e-56
+TPM3u+F+R5       -35726.939   71693.878 - 7.89e-57   71715.231 - 2.08e-56   72329.934 - 3.92e-52
+TPM3+F+R5        -35726.939   71693.878 - 7.89e-57   71715.231 - 2.08e-56   72329.934 - 3.92e-52
+HKY+F+R6         -35731.499   71704.997 - 3.04e-59   71726.722 - 6.65e-59   72346.354 - 1.07e-55
+K3Pu+F+R6        -35730.901   71705.803 - 2.03e-59   71727.903 - 3.69e-59   72352.460 - 5.03e-57
+HKY+F+R7         -35731.359   71708.717 - 4.73e-60   71731.196 -  7.1e-60   72360.676 - 8.27e-59
+K3Pu+F+R7        -35730.756   71709.512 - 3.18e-60   71732.373 - 3.94e-60   72366.770 - 3.93e-60
+HKY+F+R5         -35736.258   71710.515 - 1.93e-60   71731.500 -  6.1e-60   72341.271 - 1.35e-54
+K3Pu+F+R5        -35735.550   71711.100 - 1.44e-60   71732.453 - 3.79e-60   72347.156 - 7.13e-56
+GTR+F+G4         -35748.304   71728.609 - 2.27e-64   71748.509 - 1.24e-63   72343.464 - 4.52e-55
+GTR+F+R3         -35747.945   71733.889 - 1.62e-65   71754.874 - 5.13e-65   72364.646 - 1.14e-59
+SYM+R5           -35809.071   71858.142 - 1.69e-92   71879.495 - 4.46e-92   72494.199 - 8.39e-88
+SYM+R6           -35808.248   71860.496 - 5.21e-93   71882.596 - 9.45e-93   72507.153 - 1.29e-90
+TIM2e+R5         -35830.477   71896.955 - 6.3e-101   71917.574 - 2.4e-100   72522.411 - 6.27e-94
+TIM2e+R6         -35829.383   71898.766 - 2.55e-101   71920.119 - 6.72e-101   72534.823 - 1.26e-96
+GTR+F+R2         -36196.983   72627.966 - 1.15e-259   72648.225 - 5.26e-259   73248.122 - 1.63e-251
+TVMe+R6          -36293.176   72828.352 - 3.54e-303   72850.077 - 7.76e-303   73469.709 - 1.24e-299
+TVMe+R5          -36296.724   72831.447 - 7.54e-304   72852.432 - 2.39e-303   73462.204 - 5.3e-298
+TVMe+R7          -36293.440   72832.879 - 3.68e-304   72855.358 - 5.53e-304   73484.838 - 6.44e-303
+TIM3e+R6         -36357.260   72954.520 -        0   72975.873 -        0   73590.577 -        0
+TIM3e+R7         -36356.831   72957.662 -        0   72979.762 -        0   73604.320 -        0
+TIM3e+R5         -36363.521   72963.042 -        0   72983.662 -        0   73588.498 -        0
+TIMe+R6          -36373.002   72986.005 -        0   73007.357 -        0   73622.061 -        0
+TNe+R6           -36374.538   72987.077 -        0   73008.061 -        0   73617.833 -        0
+TIMe+R7          -36372.509   72989.018 -        0   73011.119 -        0   73635.676 -        0
+TNe+R7           -36374.033   72990.066 -        0   73011.791 -        0   73631.424 -        0
+TIMe+R5          -36378.531   72993.063 -        0   73013.683 -        0   73618.519 -        0
+TNe+R5           -36380.174   72994.349 -        0   73014.607 -        0   73614.504 -        0
+K3P+R5           -36964.899   74163.797 -        0   74184.055 -        0   74783.952 -        0
+K2P+R5           -36966.333   74164.665 -        0   74184.565 -        0   74779.520 -        0
+K3P+R6           -36963.624   74165.248 -        0   74186.232 -        0   74796.004 -        0
+K2P+R6           -36965.119   74166.237 -        0   74186.857 -        0   74791.693 -        0
+F81+F+R5         -37441.281   75118.562 -        0   75139.181 -        0   75744.017 -        0
+F81+F+R6         -37439.291   75118.583 -        0   75139.936 -        0   75754.639 -        0
+GTR+F+I          -37685.278   75602.556 -        0   75622.456 -        0   76217.411 -        0
+JC+R5            -38113.231   76456.462 -        0   76476.007 -        0   77066.016 -        0
+JC+R6            -38112.616   76459.233 -        0   76479.491 -        0   77079.388 -        0
+GTR+F            -40204.297   80638.595 -        0   80658.140 -        0   81248.149 -        0
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: GTR+F+R6
+
+Rate parameter R:
+
+  A-C: 1.5694
+  A-G: 5.0347
+  A-T: 1.8509
+  C-G: 0.4443
+  C-T: 8.7872
+  G-T: 1.0000
+
+State frequencies: (empirical counts from alignment)
+
+  pi(A) = 0.3392
+  pi(C) = 0.2607
+  pi(G) = 0.1184
+  pi(T) = 0.2817
+
+Rate matrix Q:
+
+  A   -0.6306    0.1691    0.2462    0.2154
+  C    0.2199    -1.264   0.02173     1.023
+  G    0.7056   0.04786   -0.8698    0.1164
+  T    0.2594    0.9466    0.0489    -1.255
+
+Model of rate heterogeneity: FreeRate with 6 categories
+Site proportion and rates:  (0.3106,0.01716) (0.1602,0.1974) (0.1499,0.5813) (0.1959,1.376) (0.1611,2.7) (0.02226,7.697)
+
+ Category  Relative_rate  Proportion
+  1         0.01716        0.3106
+  2         0.1974         0.1602
+  3         0.5813         0.1499
+  4         1.376          0.1959
+  5         2.7            0.1611
+  6         7.697          0.02226
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -35592.5337 (s.e. 797.2450)
+Unconstrained log-likelihood (without tree): -9284.1682
+Number of free parameters (#branches + #model parameters): 125
+Akaike information criterion (AIC) score: 71435.0674
+Corrected Akaike information criterion (AICc) score: 71458.3146
+Bayesian information criterion (BIC) score: 72097.6265
+
+Total tree length (sum of branch lengths): 10.5897
+Sum of internal branch lengths: 2.5484 (24.0648% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'Anolis.acutus' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++------Anolis.acutus
+|
+|                                                  +----A.aeneus
+|                                           +------| (100)
+|                                           |      +----A.richardi
+|                                        +--| (100)
+|                                        |  +----------A.luciae
+|                                     +--| (94)
+|                                     |  +---------------P.nicefori
+|                                  +--| (89)
+|                                  |  |   +-------A.agassizi
+|                                  |  +---| (100)
+|                                  |      +--------A.microtus
+|                               +--| (89)
+|                               |  |         +------------------------Diplolaemus.darwinii
+|                               |  +---------| (100)
+|                               |            +-------------------------Phenacosaurus.acutirostrus
+|                            +--| (93)
+|                            |  |              +----------A.aliniger
+|                            |  |           +--| (99)
+|                            |  |           |  +-----------A.coelestinus
+|                            |  |        +--| (99)
+|                            |  |        |  +-------------A.bahorucoensis
+|                            |  |     +--| (51)
+|                            |  |     |  |    +---------A.bartschi
+|                            |  |     |  +----| (95)
+|                            |  |     |       +------A.vermiculatus
+|                            |  |  +--| (94)
+|                            |  |  |  +------------A.equestris
+|                            |  +--| (86)
+|                            |     +------------------------A.occulatus
+|                         +--| (40)
+|                         |  |         +------A.etheridgei
+|                         |  |     +---| (100)
+|                         |  |     |   +----------A.insolitus
+|                         |  |  +--| (98)
+|                         |  |  |  +-------------A.olssoni
+|                         |  +--| (86)
+|                         |     +---------------Chamaeleolis.barbouri
+|                      +--| (73)
+|                      |  |           +--------A.barahonae
+|                      |  |        +--| (99)
+|                      |  |        |  +--------A.christophei
+|                      |  |     +--| (88)
+|                      |  |     |  +---------A.cuvieri
+|                      |  |  +--| (99)
+|                      |  |  |  |            +--C.guamuhaya
+|                      |  |  |  +------------| (100)
+|                      |  |  |               +--C.chamaeleonides
+|                      |  +--| (44)
+|                      |     +---------------A.lucius
+|                   +--| (63)
+|                   |  |       +--------------A.marcanoi
+|                   |  +-------| (100)
+|                   |          +-----------A.strahmi
+|                +--| (82)
+|                |  |         +--------A.alutaceous
+|                |  |  +------| (100)
+|                |  |  |      +------------A.vanidicus
+|                |  +--| (99)
+|                |     |             +----A.angusticeps
+|                |     |     +-------| (100)
+|                |     |     |       |  +--A.paternus
+|                |     |     |       +--| (100)
+|                |     |     |          +--A.paternus2
+|                |     |  +--| (56)
+|                |     |  |  +-----------------A.sheplani
+|                |     +--| (97)
+|                |        |       +----A.carolinensis
+|                |        |  +----| (100)
+|                |        |  |    +----A.maynardi
+|                |        +--| (54)
+|                |           |  +------A.loysiana
+|                |           +--| (99)
+|                |              +-----------A.pumilis
+|             +--| (100)
+|             |  |      +----------------A.ahli
+|             |  |   +--| (93)
+|             |  |   |  |        +-----A.ophiolepis
+|             |  |   |  +--------| (100)
+|             |  |   |           +----A.sagrei
+|             |  +---| (100)
+|             |      |            +------A.garmani
+|             |      |        +---| (100)
+|             |      |        |   +-----A.grahami
+|             |      |     +--| (99)
+|             |      |     |  +---------A.equestris2
+|             |      |  +--| (100)
+|             |      |  |  +---------A.lineatopus
+|             |      +--| (100)
+|             |         |        +-----------A.humilis
+|             |         |  +-----| (100)
+|             |         |  |     +------------A.limifrons
+|             |         +--| (98)
+|             |            +-------------A.lineatus
+|          +--| (92)
+|          |  |   +---------A.bimaculatus
+|          |  +---| (100)
+|          |      +-------------A.wattsi
+|       +--| (100)
+|       |  |     +----------A.brevirostrus
+|       |  +-----| (100)
+|       |        +-------A.distichus
+|    +--| (75)
+|    |  +----------A.krugi
++----| (100)
+|    +-------------A.cristatellus
+|
++-----A.stratulus
+
+Tree in newick format:
+
+(Anolis.acutus:0.1030542089,(((((((((((((((A.aeneus:0.0767253070,A.richardi:0.0767802955)100:0.0973341611,A.luciae:0.1512139970)100:0.0493126375,P.nicefori:0.2207436741)94:0.0248963888,(A.agassizi:0.1071043276,A.microtus:0.1310182572)100:0.0610942479)89:0.0447177361,(Diplolaemus.darwinii:0.3399404690,Phenacosaurus.acutirostrus:0.3491770007)100:0.1397529325)89:0.0526981018,(((((A.aliniger:0.1467591441,A.coelestinus:0.1606870822)99:0.0461225108,A.bahorucoensis:0.1888242186)99:0.0263893877,(A.bartschi:0.1444186660,A.vermiculatus:0.0997905994)95:0.0718645192)51:0.0051133020,A.equestris:0.1776630643)94:0.0167572406,A.occulatus:0.3375203338)86:0.0173593006)93:0.0274861093,(((A.etheridgei:0.1026298574,A.insolitus:0.1510556917)100:0.0563063295,A.olssoni:0.1982886638)98:0.0078045348,Chamaeleolis.barbouri:0.2154419539)86:0.0204404099)40:0.0038745735,((((A.barahonae:0.1306265621,A.christophei:0.1282197419)99:0.0363710299,A.cuvieri:0.1403708120)88:0.0327438787,(C.guamuhaya:0.0249238542,C.chamaeleonides:0.0339037172)100:0.1851686084)99:0.0369952940,A.lucius:0.2142417380)44:0.0155844807)73:0.0179969097,(A.marcanoi:0.2074686327,A.strahmi:0.1674141616)100:0.1111079367)63:0.0070245679,((A.alutaceous:0.1314055470,A.vanidicus:0.1771292186)100:0.1052710250,(((A.angusticeps:0.0723737578,(A.paternus:0.0107018781,A.paternus2:0.0061080880)100:0.0485718219)100:0.1148175750,A.sheplani:0.2526581640)56:0.0226525467,((A.carolinensis:0.0677638032,A.maynardi:0.0756618707)100:0.0739486198,(A.loysiana:0.1020783148,A.pumilis:0.1696711255)99:0.0438476162)54:0.0154589585)97:0.0199697547)99:0.0515749890)82:0.0085430227,((A.ahli:0.2332360601,(A.ophiolepis:0.0902139702,A.sagrei:0.0764521671)100:0.1267058198)93:0.0305487277,((((A.garmani:0.0950825097,A.grahami:0.0884880131)100:0.0579132854,A.equestris2:0.1439672465)99:0.0259679177,A.lineatopus:0.1371517001)100:0.0244229699,((A.humilis:0.1671364933,A.limifrons:0.1817771433)100:0.0898456347,A.lineatus:0.1978848317)98:0.0302103319)100:0.0398037086)100:0.0566827103)100:0.0380451350,(A.bimaculatus:0.1458210125,A.wattsi:0.1969684682)100:0.0663772643)92:0.0222718862,(A.brevirostrus:0.1468806181,A.distichus:0.1146624280)100:0.0889881657)100:0.0397680198,A.krugi:0.1552903878)75:0.0242220837,A.cristatellus:0.1901424346)100:0.0696342176,A.stratulus:0.0885832966);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -35592.533958
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++------Anolis.acutus
+|
+|                                                  +----A.aeneus
+|                                           +------| (100)
+|                                           |      +----A.richardi
+|                                        +--| (100)
+|                                        |  +----------A.luciae
+|                                     +--| (94)
+|                                     |  +---------------P.nicefori
+|                                  +--| (89)
+|                                  |  |   +-------A.agassizi
+|                                  |  +---| (100)
+|                                  |      +--------A.microtus
+|                               +--| (89)
+|                               |  |         +------------------------Diplolaemus.darwinii
+|                               |  +---------| (100)
+|                               |            +-------------------------Phenacosaurus.acutirostrus
+|                            +--| (93)
+|                            |  |              +---------A.aliniger
+|                            |  |           +--| (99)
+|                            |  |           |  +-----------A.coelestinus
+|                            |  |        +--| (99)
+|                            |  |        |  +-------------A.bahorucoensis
+|                            |  |     +--| (51)
+|                            |  |     |  |    +---------A.bartschi
+|                            |  |     |  +----| (95)
+|                            |  |     |       +------A.vermiculatus
+|                            |  |  +--| (94)
+|                            |  |  |  +------------A.equestris
+|                            |  +--| (86)
+|                            |     +------------------------A.occulatus
+|                         +--| (40)
+|                         |  |         +------A.etheridgei
+|                         |  |     +---| (100)
+|                         |  |     |   +----------A.insolitus
+|                         |  |  +--| (98)
+|                         |  |  |  +-------------A.olssoni
+|                         |  +--| (86)
+|                         |     +---------------Chamaeleolis.barbouri
+|                      +--| (73)
+|                      |  |           +--------A.barahonae
+|                      |  |        +--| (99)
+|                      |  |        |  +--------A.christophei
+|                      |  |     +--| (88)
+|                      |  |     |  +---------A.cuvieri
+|                      |  |  +--| (99)
+|                      |  |  |  |            +--C.guamuhaya
+|                      |  |  |  +------------| (100)
+|                      |  |  |               +--C.chamaeleonides
+|                      |  +--| (44)
+|                      |     +---------------A.lucius
+|                   +--| (63)
+|                   |  |       +--------------A.marcanoi
+|                   |  +-------| (100)
+|                   |          +-----------A.strahmi
+|                +--| (82)
+|                |  |         +--------A.alutaceous
+|                |  |  +------| (100)
+|                |  |  |      +------------A.vanidicus
+|                |  +--| (99)
+|                |     |             +----A.angusticeps
+|                |     |     +-------| (100)
+|                |     |     |       |  +--A.paternus
+|                |     |     |       +--| (100)
+|                |     |     |          +--A.paternus2
+|                |     |  +--| (56)
+|                |     |  |  +-----------------A.sheplani
+|                |     +--| (97)
+|                |        |       +----A.carolinensis
+|                |        |  +----| (100)
+|                |        |  |    +----A.maynardi
+|                |        +--| (54)
+|                |           |  +------A.loysiana
+|                |           +--| (99)
+|                |              +-----------A.pumilis
+|             +--| (100)
+|             |  |      +----------------A.ahli
+|             |  |   +--| (93)
+|             |  |   |  |        +-----A.ophiolepis
+|             |  |   |  +--------| (100)
+|             |  |   |           +----A.sagrei
+|             |  +---| (100)
+|             |      |            +------A.garmani
+|             |      |        +---| (100)
+|             |      |        |   +-----A.grahami
+|             |      |     +--| (99)
+|             |      |     |  +---------A.equestris2
+|             |      |  +--| (100)
+|             |      |  |  +---------A.lineatopus
+|             |      +--| (100)
+|             |         |        +-----------A.humilis
+|             |         |  +-----| (100)
+|             |         |  |     +------------A.limifrons
+|             |         +--| (98)
+|             |            +-------------A.lineatus
+|          +--| (92)
+|          |  |   +---------A.bimaculatus
+|          |  +---| (100)
+|          |      +-------------A.wattsi
+|       +--| (100)
+|       |  |     +----------A.brevirostrus
+|       |  +-----| (100)
+|       |        +-------A.distichus
+|    +--| (75)
+|    |  +----------A.krugi
++----| (100)
+|    +-------------A.cristatellus
+|
++-----A.stratulus
+
+
+Consensus tree in newick format: 
+
+(Anolis.acutus:0.1029958198,(((((((((((((((A.aeneus:0.0766736057,A.richardi:0.0767097247)100:0.0972487695,A.luciae:0.1510837948)100:0.0492798751,P.nicefori:0.2205398535)94:0.0248829454,(A.agassizi:0.1070195809,A.microtus:0.1308953980)100:0.0610528432)89:0.0446717447,(Diplolaemus.darwinii:0.3395691610,Phenacosaurus.acutirostrus:0.3488154105)100:0.1397063021)89:0.0526711195,(((((A.aliniger:0.1466231308,A.coelestinus:0.1605412931)99:0.0460945033,A.bahorucoensis:0.1886436211)99:0.0263613094,(A.bartschi:0.1442895716,A.vermiculatus:0.0996988384)95:0.0718081726)51:0.0051113654,A.equestris:0.1774969498)94:0.0167533171,A.occulatus:0.3371791381)86:0.0173425086)93:0.0274617290,(((A.etheridgei:0.1025486761,A.insolitus:0.1509255922)100:0.0562694166,A.olssoni:0.1981062518)98:0.0078141505,Chamaeleolis.barbouri:0.2152525772)86:0.0204246250)40:0.0038711880,((((A.barahonae:0.1305282373,A.christophei:0.1281140633)99:0.0363533557,A.cuvieri:0.1402554222)88:0.0327278392,(C.guamuhaya:0.0249130419,C.chamaeleonides:0.0338741130)100:0.1850154021)99:0.0369697037,A.lucius:0.2140577164)44:0.0155857637)73:0.0179811523,(A.marcanoi:0.2073101195,A.strahmi:0.1672807940)100:0.1110407692)63:0.0070215367,((A.alutaceous:0.1313127604,A.vanidicus:0.1769952873)100:0.1052111614,(((A.angusticeps:0.0723312153,(A.paternus:0.0106957922,A.paternus2:0.0061038312)100:0.0485376822)100:0.1147188642,A.sheplani:0.2524626384)56:0.0226666796,((A.carolinensis:0.0677233377,A.maynardi:0.0756050346)100:0.0738982073,(A.loysiana:0.1020072672,A.pumilis:0.1695399120)99:0.0438286897)54:0.0154549488)97:0.0199520004)99:0.0515376401)82:0.0085368943,((A.ahli:0.2330700895,(A.ophiolepis:0.0901641791,A.sagrei:0.0763977209)100:0.1266126421)93:0.0305460643,((((A.garmani:0.0950276903,A.grahami:0.0884313113)100:0.0578764551,A.equestris2:0.1438786878)99:0.0259602670,A.lineatopus:0.1370624194)100:0.0244090694,((A.humilis:0.1670231933,A.limifrons:0.1816506862)100:0.0897992937,A.lineatus:0.1977488221)98:0.0302002671)100:0.0397786151)100:0.0566444311)100:0.0380214724,(A.bimaculatus:0.1457314919,A.wattsi:0.1968364166)100:0.0663492085)92:0.0222632803,(A.brevirostrus:0.1467935955,A.distichus:0.1145885368)100:0.0889421784)100:0.0397449055,A.krugi:0.1551938471)75:0.0242121521,A.cristatellus:0.1900294702)100:0.0695980704,A.stratulus:0.0885281895);
+
+TIME STAMP
+----------
+
+Date and time: Thu Aug 27 14:19:03 2026
+Total CPU time used: 88.274165 seconds (0h:1m:28s)
+Total wall-clock time used: 24.49610614 seconds (0h:0m:24s)
+
